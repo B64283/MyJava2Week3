@@ -1,18 +1,56 @@
 package com.example.matthewdarke.myjava2week3;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+
+import java.util.ArrayList;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
+
+    public static ArrayList<Contacts> contactsArray = new ArrayList<Contacts>();
+    public static ArrayAdapter<Contacts> adapter;
+
+    public static int deleteAtIndex;
+
+    public static final int REQUEST_CODE = 2001;
+    public static Contacts mConData;
+    public static int deleteIndex;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // If no state bundle exists, this is the first launch.
+        // Add your fragments just this one time.
+        if (savedInstanceState == null) {
+
+            MainFragment fragment = new MainFragment();
+            getFragmentManager().beginTransaction()
+                    .add(R.id.main_activity_id, fragment).commit();
+        }
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     @Override
