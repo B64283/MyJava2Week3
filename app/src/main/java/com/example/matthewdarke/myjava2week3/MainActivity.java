@@ -1,6 +1,7 @@
 package com.example.matthewdarke.myjava2week3;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -41,8 +42,17 @@ public class MainActivity extends Activity {
     }
 
 
+    public void cacheData() {
 
 
+    }
+
+
+
+    public void loadCacheData() {
+
+
+    }
 
 
 
@@ -68,7 +78,11 @@ public class MainActivity extends Activity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_Add_Contacts) {
+            Intent addTo = new Intent(this,AddActivity.class);
+            startActivityForResult(addTo, REQUEST_CODE);
+
+
             return true;
         }
 
