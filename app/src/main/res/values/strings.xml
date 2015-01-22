@@ -4,6 +4,7 @@
     <string name="app_name">MyJava2Week3</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="add">Add Contact</string>
+    <string name="add">Add Contacts</string>
+    <string name="delete">Contact Deleted</string>
 
 </resources>

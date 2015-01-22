@@ -10,32 +10,40 @@
     <TextView
         android:layout_width="290dp"
         android:layout_height="70dp"
-        android:text="   Click Settings to Add Contact"
+        android:text="        Use Settings To Add Contact"
         android:id="@+id/txt"
-        android:textSize="08pt"
+        android:textSize="10pt"
         android:textAlignment="inherit"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/b3"
-        android:layout_toStartOf="@+id/b3"/>
+        android:layout_toStartOf="@+id/b3"
+        android:layout_alignRight="@+id/b3"
+        android:layout_alignEnd="@+id/b3"
+        android:background="#ff4c4a4a"
+        android:textColor="#ff1deefb"
+        android:paddingTop="@dimen/abc_text_size_title_material"/>
 
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@android:id/list"
-        android:layout_below="@+id/txt"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/b3"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Implicit intent"
         android:id="@+id/b3"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/txt"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"/>
+        android:layout_alignParentEnd="true"
+        android:paddingTop="@dimen/abc_text_size_title_material_toolbar"
+        />
+
+
 
 
 </RelativeLayout>

@@ -1,10 +1,13 @@
 package com.example.matthewdarke.myjava2week3;
 
+import java.io.Serializable;
+
 /**
  * Created by matthewdarke on 1/21/15.
  */
-public class Contacts {
+public class Contacts implements Serializable{
 
+    public static final long serialVersionUID = 7877777587982937458L;
 
     public static Contacts newInstance(String _name, String _address, String _number) {
 
